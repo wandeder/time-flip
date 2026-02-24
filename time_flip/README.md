@@ -41,7 +41,7 @@ time_flip/
 1. Open `chrome://extensions`.
 2. Enable **Developer mode** (top-right).
 3. Click **Load unpacked**.
-4. Select this folder: `/Users/Dima/my_projects/time_flip/time_flip`.
+4. Select this folder: `/time_flip/time_flip`.
 5. Pin **TimeFlip** from the extensions menu if needed.
 
 ## Install in Arc
@@ -49,7 +49,7 @@ time_flip/
 1. Open Arc and go to `arc://extensions`.
 2. Enable **Developer mode**.
 3. Click **Load unpacked**.
-4. Select this folder: `/Users/Dima/my_projects/time_flip/time_flip`.
+4. Select this folder: `/time_flip/time_flip`.
 5. Open the extension popup from Arc’s extensions menu.
 
 ## Usage
