@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeFlip</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>TimeFlip</h1>
+    </header>
+
+    <section class="panel">
+      <label for="timezone">Timezone</label>
+      <select id="timezone" aria-label="Timezone"></select>
+    </section>
+
+    <section class="panel" id="ts-section">
+      <h2>Timestamp to Date</h2>
+      <input id="ts-input" type="text" inputmode="numeric" placeholder="e.g. 1700000000 or 1700000000000" autocomplete="off">
+      <div class="actions">
+        <button id="ts-convert" type="button">Convert</button>
+      </div>
+      <p id="ts-error" class="error" aria-live="polite"></p>
+      <p id="ts-result" class="result" aria-live="polite">-</p>
+    </section>
+
+    <section class="panel" id="date-section">
+      <h2>Date to Timestamp</h2>
+      <input id="date-input" type="datetime-local" step="1">
+      <div class="actions">
+        <button id="date-convert" type="button">Convert</button>
+      </div>
+      <p id="date-error" class="error" aria-live="polite"></p>
+      <div id="date-result" class="result-group" aria-live="polite">
+        <p class="result-row"><span>Seconds</span><strong id="date-seconds">-</strong></p>
+        <p class="result-row"><span>Milliseconds</span><strong id="date-milliseconds">-</strong></p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="history-head">
+        <h2>History</h2>
+        <button id="clear-history" type="button" class="ghost">Clear history</button>
+      </div>
+      <ul id="history" class="history-list"></ul>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
